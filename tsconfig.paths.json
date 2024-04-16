@@ -1,0 +1,19 @@
+{
+  "compilerOptions":{
+    "baseUrl":"./src",
+    "paths":{
+      "@":["./"],
+      "@/*":["./*"],
+      "@utilities":["./utilities"],
+      "@utilities/*":["./utilities/*"],
+      "@assets":["./assets"],
+      "@assets/*":["./assets/*"],
+      "@icons":["./assets/icons"],
+      "@icons/*":["./assets/icons/*"],
+      "@pages":["./pages"],
+      "@pages/*":["./pages/*"],
+      "@components":["./components"],
+      "@components/*":["./components/*"]
+    }
+  }
+}
