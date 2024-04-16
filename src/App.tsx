@@ -1,17 +1,7 @@
-import stylex from '@stylexjs/stylex';
-
-const styles = stylex.create({
-	main: {
-		color: '#333333',
-	},
-});
+import Layout from './components/Layout';
 
 function App() {
-	return (
-		<>
-			<p {...stylex.props(styles.main)}>Hello React!</p>
-		</>
-	);
+	return <Layout>FOO BAR</Layout>;
 }
 
 export default App;
