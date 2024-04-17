@@ -4,11 +4,17 @@ import { get } from '@services/axios';
 import { CATEGORY_ID, VENDOR_CODE } from '@constants';
 import { ProductListVendor } from '@types';
 
-export const getProductListVendor = async (): Promise<ProductListVendor> => {
+type ProductListVendorParams = {
+	page: number;
+};
+
+export const getProductListVendor = async ({
+	page = 0,
+}: ProductListVendorParams): Promise<ProductListVendor> => {
 	const { data } = await get(urls.productList, {
 		vendor_code: VENDOR_CODE,
 		category_id: CATEGORY_ID,
-		page: '0',
+		page: page.toString(),
 		page_size: '12',
 		size: '12',
 	});
