@@ -1,0 +1,10 @@
+<svg
+  xmlns='http://www.w3.org/2000/svg'
+  width='16'
+  height='16'
+  viewBox='0 0 24 24'>
+  <g fill-rule='nonzero'>
+    <path fill-opacity='0' d='M0 0h24v24H0z'></path>
+    <path d='M8 13a1 1 0 0 1 0 2H6v6a1 1 0 0 1-2 0v-6H2a1 1 0 0 1 0-2h6zm4-2a1 1 0 0 1 1 1v9a1 1 0 0 1-2 0v-9a1 1 0 0 1 1-1zm10 4a1 1 0 0 1 0 2h-2v4a1 1 0 0 1-2 0v-4h-2a1 1 0 0 1 0-2h6zM19 2a1 1 0 0 1 1 1v9a1 1 0 0 1-2 0V3a1 1 0 0 1 1-1zM5 2a1 1 0 0 1 1 1v7a1 1 0 0 1-2 0V3a1 1 0 0 1 1-1zm7 0a1 1 0 0 1 1 1v4h2a1 1 0 0 1 0 2H9a1 1 0 1 1 0-2h2V3a1 1 0 0 1 1-1z'></path>
+  </g>
+</svg>
