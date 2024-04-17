@@ -32,8 +32,9 @@ html {
   Improve text rendering
 */
 body {
-  line-height: 1.5;
+  font-family: IranSansX;
   font-synthesis: none;
+  line-height: 1.5;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
