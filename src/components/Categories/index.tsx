@@ -5,7 +5,12 @@ import { Props } from './types';
 
 function Categories({ items }: Props) {
 	return (
-		<div {...stylex.props(styles.categories)}>
+		<div
+			{...stylex.props(
+				styles.categories,
+				styles.hiddenScrollbar,
+				styles.shadow
+			)}>
 			{items.map((item) => (
 				<CategoryItem key={item.id} title={item.title} imageUrl={item.image} />
 			))}

@@ -1,7 +1,12 @@
-import { colors } from '@/index.stylex';
+import { colors, elementSizes } from '@/variables.stylex';
 import stylex from '@stylexjs/stylex';
 
 export const styles = stylex.create({
+	content: {
+		// This one pixel comes from the border of the navigation bar
+		// if we don't compensate for it we'll have a overflow on the entire screen
+		height: `calc(100% - 1px - ${elementSizes.navbar} - ${elementSizes.options})`,
+	},
 	layout: {
 		height: '100%',
 		// Change this value to expand or shrink the width of the page in table and desktop
@@ -16,7 +21,7 @@ export const styles = stylex.create({
 	},
 	options: {
 		display: 'flex',
-		height: '64px',
+		height: elementSizes.options,
 		justifyContent: 'space-between',
 		alignItems: 'center',
 		borderBottomWidth: '1px',
@@ -47,7 +52,7 @@ export const styles = stylex.create({
 		alignItems: 'center',
 	},
 	navbar: {
-		height: '65px',
+		height: elementSizes.navbar,
 		display: 'flex',
 		justifyContent: 'space-between',
 		alignItems: 'center',

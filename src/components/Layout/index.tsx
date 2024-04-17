@@ -2,7 +2,7 @@ import stylex from '@stylexjs/stylex';
 import { PropsWithChildren } from 'react';
 import { styles } from './styles';
 import { Back, ExpressLogo, Search, Setting, Sort } from '@icons';
-import { colors } from '@/index.stylex';
+import { colors } from '@/variables.stylex';
 
 function Layout({ children }: PropsWithChildren) {
 	const handleBack = () => {
@@ -55,7 +55,7 @@ function Layout({ children }: PropsWithChildren) {
 					</div>
 				</div>
 			</header>
-			<main>{children}</main>
+			<main {...stylex.props(styles.content)}>{children}</main>
 		</div>
 	);
 }
