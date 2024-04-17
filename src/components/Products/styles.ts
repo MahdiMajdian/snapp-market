@@ -7,5 +7,6 @@ export const styles = stylex.create({
 		display: 'grid',
 		gridTemplateColumns: '1fr 1fr',
 		overflowY: 'auto',
+		backgroundColor: '#ffffff',
 	},
 });

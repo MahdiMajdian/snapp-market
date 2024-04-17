@@ -2,6 +2,7 @@ import stylex from '@stylexjs/stylex';
 import { Item } from '@types';
 import { styles } from './styles';
 import { Plus } from '@/assets/icons';
+import ImagePlaceholder from '@assets/images/image-placeholder.webp';
 
 type Props = {
 	product: Item;
@@ -9,13 +10,18 @@ type Props = {
 
 function ProductItem({ product }: Props) {
 	const { price, title } = product.data;
+
 	return (
 		<div {...stylex.props(styles.wrapper)}>
 			<div {...stylex.props(styles.item)}>
 				<div {...stylex.props(styles.thumbnail)}>
 					<img
 						{...stylex.props(styles.image)}
-						src={product.data.images[0].thumb}
+						src={
+							product.data.images
+								? product.data.images[0].thumb
+								: ImagePlaceholder
+						}
 						alt='product thumbnail'
 						loading='lazy'
 					/>
