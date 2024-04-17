@@ -10,8 +10,8 @@ type Props = {
 function CategoryItem({ alt, imageUrl, title }: Props) {
 	return (
 		<div {...stylex.props(styles.item)}>
-			<img {...stylex.props(styles.image)} src={imageUrl} alt={alt} />
 			<span {...stylex.props(styles.title)}>{title}</span>
+			<img {...stylex.props(styles.image)} src={imageUrl} alt={alt} />
 		</div>
 	);
 }

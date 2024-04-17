@@ -19,6 +19,9 @@ export const styles = stylex.create({
 		height: '64px',
 		justifyContent: 'space-between',
 		alignItems: 'center',
+		borderBottomWidth: '1px',
+		borderBottomStyle: 'solid',
+		borderBottomColor: '#e6e6e6',
 	},
 	search: {
 		height: '100%',
